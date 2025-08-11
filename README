@@ -1,0 +1,21 @@
+Welcome! This bot helps moderate chat by detecting and flagging specific keywords.
+
+Available Commands
+!addword <word>
+Adds a new word to the censor list. The bot will watch for this word in messages and reply when detected.
+Example: !addword spoiler
+
+!removeword <word>
+Removes a word from the censor list. It will no longer trigger the bot.
+Example: !removeword spoiler
+
+!listwords
+Shows the current list of censored keywords.
+
+Permissions
+Only users with the Manage Messages permission can use these commands.
+
+How It Works
+The bot caches the list of keywords on startup and updates the cache when words are added or removed.
+
+When a message contains any of the censored keywords, the bot replies with a message including a random emoji and the censored word.
